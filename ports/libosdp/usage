@@ -1,0 +1,14 @@
+libosdp provides CMake targets:
+
+  find_package(LibOSDP CONFIG REQUIRED)
+
+  # to link to shared library
+  target_link_libraries(main PRIVATE libosdp::osdp)
+
+  # or, to link to static library
+  target_link_libraries(main PRIVATE libosdp::osdpstatic)
+
+libosdp provides pkg-config modules:
+
+    # Open Supervised Device Protocol (OSDP) Library
+    libosdp
